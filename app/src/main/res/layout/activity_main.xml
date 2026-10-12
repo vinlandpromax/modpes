@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#121212">
+
+    <TextView
+        android:text="Auto Reconnect"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView android:text="Ping interval (detik)" android:textColor="#AAAAAA"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/etPingInterval"
+        android:inputType="number" android:text="5"
+        android:textColor="#FFFFFF" android:backgroundTint="#444444"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView android:text="Airplane ON durasi (detik)" android:textColor="#AAAAAA"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/etAirplaneOn"
+        android:inputType="number" android:text="5"
+        android:textColor="#FFFFFF" android:backgroundTint="#444444"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView android:text="Tunggu reconnect (detik)" android:textColor="#AAAAAA"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/etReconnectWait"
+        android:inputType="number" android:text="15"
+        android:textColor="#FFFFFF" android:backgroundTint="#444444"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"/>
+
+    <Button android:id="@+id/btnStart"
+        android:text="START"
+        android:backgroundTint="#1E88E5"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <Button android:id="@+id/btnStop"
+        android:text="STOP"
+        android:backgroundTint="#E53935"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView android:id="@+id/tvStatus"
+        android:text="Status: MATI"
+        android:textSize="18sp"
+        android:textColor="#FFEB3B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

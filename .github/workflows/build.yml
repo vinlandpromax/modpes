@@ -22,13 +22,9 @@ jobs:
         run: |
           chmod +x gradlew
           ./gradlew assembleDebug --no-daemon
-        env:
-          GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx2048m"
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name:
-
-
-
+          name: AutoReconnect-debug
+          path: app/build/outputs/apk/debug/*.apk
